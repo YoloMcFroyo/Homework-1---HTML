@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393e46;
+    color: #f96d00; 
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+/* Header */
+ 
+header {
+    grid-column: 1 / -1;
+    background-color: #222831;
+    color: #f2f2f2;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f96d00;
+    margin-right: 1px;
+}
+
+nav p {
+    margin: 0;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+header h1, header strong {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f96d00;
+    text-decoration: none;
+}
+
+nav.strong {
+    color: white;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+nav a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+
+
+/* Main content \(*_*\) */
+
+main {
+    background-color: #222831;
+    color: #f2f2f2;
+    border-radius: 12px;
+    
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f96d00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #f96d00;
+    text-transform: capitalize;
+    word-spacing: 0px;
+    margin-top: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #f96d00;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    background-color: #222831;
+    color: #f2f2f2;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f96d00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/*seattle figure*/
+
+figure {
+    background-color: #222831;
+    color: #f2f2f2;
+
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f96d00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    grid-column: 1;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin: 0px;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 12px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*contact page*/
+
+details {
+    background-color: #393e46;
+    color: #f2f2f2;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f96d00;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+summary {
+    font-weight: 700px;
+    color: #f2f2f2;
+    cursor: pointer;
+    outline: none;
+}
+
+summary:hover {
+    color: #f96d00;
+}
+
+footer, small {
+    grid-column: 1 / -1;
+    background-color: #222831;
+    color: #f2f2f2;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-style: normal;
+    color: #f96d00;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;   
+    }
+}
